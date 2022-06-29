@@ -18,5 +18,5 @@ float ViewMatrixHook::GetFarPlane()
 
 float ViewMatrixHook::GetNearPlane()
 {
-	return 0.1f;
+	return 0;
 }
