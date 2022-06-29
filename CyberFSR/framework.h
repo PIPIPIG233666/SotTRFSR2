@@ -9,6 +9,7 @@
 #include <unordered_map>
 #include <vector>
 #include <mutex>
+#include <limits>
 
 #include <ffx-fsr2-api/ffx_fsr2.h>
 #include <ffx-fsr2-api/dx12/ffx_fsr2_dx12.h>
