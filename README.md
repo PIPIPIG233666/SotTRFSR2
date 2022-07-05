@@ -14,13 +14,13 @@
 * Run RDR2
 
 ## Troubleshooting
-(The main reason I made this fork)
+(The main reason I made this fork, I simply approve PRs and keep it updated.)
 
 - I'm getting a Rockstar Social Club error 4, so I can't even play the game!
-Delete d3d11.dll. This seems to somehow fix the issue with the Social Club error.
+<br><br><b>Answer:</b> Delete d3d11.dll. This seems to somehow fix the issue with the Social Club error.
 
 - The DLSS option is not showing up on the menu, why?
-Calm down, download the [EnableSignatureOverride.reg](https://github.com/AkiraJkr/RDRFSR2/blob/main/EnableSignatureOverride.reg) and run it. It should show up from there on out.
+<br><br><b>Answer:</b> Calm down, download the [EnableSignatureOverride.reg](https://github.com/AkiraJkr/RDRFSR2/blob/main/EnableSignatureOverride.reg) and run it. It should show up from there on out.
 
 ## Compilation
 
