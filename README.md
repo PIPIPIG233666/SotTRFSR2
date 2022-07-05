@@ -20,7 +20,7 @@
 <br><br><b>Answer:</b> Delete d3d11.dll. This seems to somehow fix the issue with the Social Club error.
 
 - The DLSS option is not showing up on the menu, why?
-<br><br><b>Answer:</b> Calm down, download the [EnableSignatureOverride.reg](https://github.com/AkiraJkr/RDRFSR2/blob/main/EnableSignatureOverride.reg) and run it. It should show up from there on out.
+<br><br><b>Answer:</b> Calm down, download the [EnableSignatureOverride.reg](https://github.com/AkiraJkr/RDRFSR2/releases/download/v1.1/EnableSignatureOverride.reg) and run it. It should show up from there on out.
 
 ## Compilation
 
