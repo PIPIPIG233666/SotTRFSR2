@@ -24,10 +24,11 @@ void Dx12ParameterImpl::Set(const char* InName, float InValue)
 		JitterOffsetY = InValue;
 		break;
 	case Util::NvParameter::Sharpness:
+		// normalize sharpness value to [0, 1] range
+		// originally in range [-0.99, 1]
 		if (InValue >= 1.0f) {
 			Sharpness = 1;
-		}
-		else {
+		} else {
 			Sharpness = (InValue + 0.99f) / 2.0f;
 		}
 		break;

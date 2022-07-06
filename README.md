@@ -1,23 +1,28 @@
-# FidelityFx Super Resolution 2.0 for Red Dead Redemption 2
+# FidelityFx Super Resolution 2.0 for Dying Light 2
 
- This mod is a library for RDR2 which replaces Nvidia DLSS with AMD FidelityFX Super Resolution 2.0.
- This will not work with cracked versions of RDR2.
- 
- An extended guide to help with any issues can be found on the Nexus mod description [here](https://www.nexusmods.com/reddeadredemption2/mods/1550)
- 
 ## Installation
 
-* Ensure you are using DX12 for RDR2 and not Vulkan!
-* Ensure asyncComputeEnabled is set to false in your system.xml file found in Documents\Rockstar Games\Red Dead Redemption 2\Settings\system.xml
-* Download the latest release 
-* Unzip the contents to your RDR2 executable directory
-* Run RDR2
+1. Download the latest DL2FSR2.zip file from [the releases](https://github.com/mnxn/DL2FSR2/releases).
+2. Extract the `.reg` files to anywhere and run `EnableSignatureOverride.reg` (it may need admin permission).
+3. Extract `nvngx.dll` to `Dying Light 2\ph\work\bin\x64` so it is next to `nvngx_dlss.dll` and
+   `DyingLightGame_x64_rwdi.exe`.
+4. Make sure that the game has the `Renderer Mode` set to `D3D12` in the `Advanced Video Settings`.
+5. Run the game and select one of the now-available DLSS `Upscaling` options in the `Video` settings:
+    - `DLSS, quality` is FSR 2.0 Quality: Upscale by a factor of `1.5x`
+    - `DLSS, balanced` is FSR 2.0 Balanced: Upscale by a factor of `1.7x`
+    - `DLSS, performance` is FSR 2.0 Performance: Upscale by a factor of `2.0x`
 
-## Troubleshooting
-(The main reason I made this fork, I simply approve PRs and keep it updated.)
+## Uninstallation
 
-- I'm getting a Rockstar Social Club error 4, so I can't even play the game!
-<br><br><b>Answer:</b> Delete d3d11.dll. This seems to somehow fix the issue with the Social Club error.
+1. Delete `nvngx.dll` from `Dying Light 2\ph\work\bin\x64`.
+2. Run `DisableSignatureOverride.reg`.
+3. Both `.reg` files are no longer needed and can be deleted from wherever you stored them.
+
+---
+
+Original CyberFSR information below:
+
+# FidelityFx Super Resolution 2.0 for Cyberpunk 2077
 
 - The DLSS option is not showing up on the menu, why?
 <br><br><b>Answer:</b> Calm down, download the [EnableSignatureOverride.reg](https://github.com/AkiraJkr/RDRFSR2/releases/download/v1.1/EnableSignatureOverride.reg) and run it. It should show up from there on out.

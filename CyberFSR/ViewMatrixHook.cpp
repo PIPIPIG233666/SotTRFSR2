@@ -3,21 +3,20 @@
 
 ViewMatrixHook::ViewMatrixHook()
 {
-	uintptr_t mod = (uintptr_t)GetModuleHandle(NULL);
-	camParams = (CameraParams*)(mod + 0x3E806E0);
 }
 
 float ViewMatrixHook::GetFov()
 {
-	return camParams->FoV;
+	// default vertical FOV of 57 + maximum slider value of 20
+	return 77.0f;
 }
 
 float ViewMatrixHook::GetFarPlane()
 {
-	return camParams->FarPlane;
+	return std::numeric_limits<float>::infinity();
 }
 
 float ViewMatrixHook::GetNearPlane()
 {
-	return camParams->NearPlane;
+	return 0;
 }
